@@ -1,23 +1,28 @@
 {
   "name": "ember-cli-webgl",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "WebGL utilities for your ember-cli app",
   "keywords": [
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "bugs": {
+    "url": "https://github.com/anulman/broccoli-webgl-transpiler/issues"
+  },
+  "homepage": "https://github.com/anulman/broccoli-webgl-transpiler#readme",
+  "author": "Aidan Nulman <anulman@gmail.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/anulman/ember-cli-webgl",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
     "test": "ember try:each"
   },
   "dependencies": {
+    "broccoli-webgl-transpiler": "^0.0.1",
     "ember-cli-babel": "^6.6.0"
   },
   "devDependencies": {
@@ -44,6 +49,7 @@
     "node": "^4.5 || 6.* || >= 7.*"
   },
   "ember-addon": {
+    "before": "ember-cli-babel",
     "configPath": "tests/dummy/config"
   }
 }

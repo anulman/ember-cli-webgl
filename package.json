@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-webgl",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "WebGL utilities for your ember-cli app",
   "keywords": [
     "ember-addon"
